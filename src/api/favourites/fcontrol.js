@@ -6,7 +6,7 @@ router.post('/add/:id', async (req, res) => {
     const { id } = req.params;
   
     try {  
-      const stock = await Stock.findOne({ code:id });
+      const stock = await Stock.find({ code:id });
   
       if (!stock) {
         return res.status(404).json({ error: 'Stock not found' });
@@ -43,7 +43,7 @@ router.post('/add/:id', async (req, res) => {
     const { symbol } = req.params;
   
     try {
-      const deletedFavoriteStock = await Stock.findOne({ code:symbol });
+      const deletedFavoriteStock = await Stock.find({ code:symbol });
   
       if (!deletedFavoriteStock) {
         return res.status(404).json({ error: 'Favorite stock not found' });
