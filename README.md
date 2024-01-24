@@ -29,6 +29,15 @@ BSE/
 
 ## Installation and Setup
 
+### NOTE:
+
+- **If you are using the app for first time**
+  - Then you should run .
+    ```bash
+      node downloadData.js
+    ```
+    This downloads required files for your operation.
+
 1. Clone the repository:
 
    ```bash
