@@ -25,7 +25,7 @@ const processCSV = async (date = 120124) => {
             const stockCode = row[0];
 
             
-            const existingStock = await Stock.findOne({ code: stockCode });
+            const existingStock = await Stock.find({ code: stockCode });
 
             if (!existingStock) {
               const currentTimestamp = new Date();

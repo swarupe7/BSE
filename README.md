@@ -97,6 +97,15 @@ BSE/
     ```
   - Inplace of :name enter the name of the stock
 
+- **GET /api/last50days**
+  - Get the stocks details traded during last 50 days.
+  - Implemented cache for faster retreival
+  
+    Example:
+    ```plaintext
+    GET /api/last50days
+    ```
+
 ### Favourites API
 
 - **GET /api/favourites/visit**
